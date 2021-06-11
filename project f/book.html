@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Ticket booking</title>
+<meta charset="Utf-8">
+<meta name="keyword" content="mini webpage">
+<meta name="description" content="rides , water rides , park, enjoyment">
+<meta name="author" content="mythily sowmya gayathri">
+<meta name="viewport" content="width=device-width ,initial_selected=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+div.heading{
+	font-size:32px;
+	}
+
+body{
+	background-image:url('ticket6.jpg');
+	background-position:center;
+	background-size:cover;
+	font-family:Aerial;
+	font-size:24px;
+	color:black;
+}
+input{
+ width:50%;
+ height:25px;
+ background-color:lightgoldenrodyellow;
+ border-radius:5px;
+}
+
+table{
+ border:3px solid white;
+ margin-left:auto;
+ margin-right:auto;
+ border-radius:25px;
+ width:500px;
+ height:600px;
+ table-layout:fixed;
+}
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+   /* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=submit]{
+width:15%;
+height:30px;
+border-radius:50px;
+background-color:lightblue;
+}
+
+div.transbox {
+  margin-left:auto;
+ margin-right:auto;
+ border-radius:25px;
+ width:500px;
+ height:600px;
+  background-color: rgba(255,255,255,0.3);/*rgba(0,151,19,0.1)*/
+  border: 1px solid black;
+ }
+
+</style>
+</head>
+<body>
+
+  <div class="transbox">
+<table>
+<tr>
+<th colspan="2">
+	<div class="heading">Book Your <strong> TICKETS <strong>Here..!</div>
+</th>
+</tr>
+<form action="download.php" method="POST">
+<tr>
+<th>
+	Name
+</th>
+<td>
+<input type="name" placeholder="enter your name" name="u_name" required>
+</td>
+</tr>
+<tr>
+<th>
+	e-mail
+</th>
+<td>	<input type="email" placeholder="enter your mail id" name="u_email" required>
+</td>
+</tr>
+<tr>
+<th>Mobile No. </th><td><input type="tel" placeholder="enter your mobile no." pattern="[0-9]{5}[0-9]{5}" size="10" maxlength="10" name="u_phone" required></td></tr>
+<tr>
+<th>
+Address</th><td>
+         <input type="text" placeholder="door no." name="u_dno" required><br></td>
+</tr>
+<tr>
+<th> </th>
+<td>
+		<input type="text" placeholder="street" name="u_strt" required><br>
+		<input type="text" placeholder="district" name="u_dist" required><br> <input type="number" placeholder="pincode" size="7" maxlength="7" name="u_pin"><br>
+		<input type="text" placeholder="state" name="u_state" required>
+</td></tr>
+<tr>
+<th colspan="2"><strong>No.of...</strong></th></tr>
+<tr>
+<th>Adults<br>
+<input type="number" placeholder="adults" name="adult_c"><br></th>
+<th>Children<br>
+<input type="number" placeholder="children" name="child_c"><br></th>
+</tr>
+<tr>
+<th colspan="2">
+<input type="submit" name="generate_pdf" value="BOOK!"></th>
+</tr>
+</form>
+</table>
+</div>
+</body>
+</html>

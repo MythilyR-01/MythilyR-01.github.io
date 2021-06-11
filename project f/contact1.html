@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact</title>
+    <link rel="stylesheet" type="text/css" href="contact1.css">
+    <script type="text/javascript">
+    	funtion validate()
+    	{
+    		var Name=document.getElementById('name');
+    		var Email=document.getElementById('mail');
+    		var Phonenumber=document.getElementById('ph');
+    		var Comment=document.getElementById('com');
+
+    	    if(Name.value=="" ||Email.value=="" ||Phonenumber.value=="" ||Comment.value=="" )
+    	    {
+    	    	alert("no blank value allowed")
+    	    	return false;
+    	    }
+    	    else{
+               true;
+    	    }
+    	
+    </script>
+		
+
+</head>
+<body>
+	<div class="main">
+        
+        <div class="logo" onclick="window.location.href='index.html'">
+
+            <img src="GMS logo 2.png" >
+        </div>
+	<header><center>CONTACT GMS AMUSEMENT PARK!</header></center>
+		<div class="book">
+	<h1>leave your valuable comments here!</h1>	
+	<img src="contact2.jpg">																				
+<form onsubmit=" return validate()" action="submit.html">	
+
+Name*:<br>
+<input id="name" type="text" name="uname" placeholder="Enter your name" required ><br><br>
+Email*:<br>
+<input id="mail" type="email" name="mail" placeholder="Enter your mailid" required ><br><br>
+Phone Number*:<br>
+<input  id="ph" type="text" name="ph" placeholder="Enter your phonenumber" required ><br><br>
+comment*:<br>
+<input  id="com" type="text" name="comment" placeholder="Your comment" required >
+</p>
+
+<center><a href="submit.html"><button tupe="button">submit</button></a></center>
+</div>
+
+<div class="details">
+	    <h1>we are always ready to serve you!</h1>
+		<h2>contact us on....</h2>
+		Email:gmspark@gmail.com<br><br>
+		Mobile no:9365421790<br><br>
+		you can also visit our insta page!<br><br>
+		Insta id:amazing_gms<br><br>
+		For any queries contact:9078567123,9065687124 
+	</div>
+</body>
+</html>

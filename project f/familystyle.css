@@ -1,0 +1,14 @@
+.thrillgallery{
+	margin:10px 50px;
+
+}
+.thrillgallery img{
+	border-radius: 25px;
+	transition: 1s;
+	padding: 15px;
+	width:250px;
+}
+.thrillgallery img:hover{
+	
+	transform: scale(1.2,1.2);
+}

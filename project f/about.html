@@ -1,0 +1,357 @@
+<html>
+<head>
+<title>ABOUT US|GMS</title>
+<style>
+  .logo img{
+  float: left;
+  margin-top: 7px;
+  width: 150px;
+  height: auto;
+  padding: 5px 5px;
+  margin-left: 10px;
+  
+  
+}
+.main{
+  margin: auto;
+}
+header{background-color:#00008B;
+  padding: 20px;
+  font-size: 30px;
+  color:white;
+  letter-spacing: 3px;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 3s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 20px
+  font-variant-caps: petite-caps;
+font-style: oblique;
+}
+}
+h1#demo{
+margin-left:225pt;}
+p#hi{
+margin-left:225pt;
+margin-right:245pt;
+font-family:sans-serif  ;
+font-style:regular;
+font-size:14pt;
+color:231F20;
+line-height: 1.8;
+}
+p#hii{
+margin-left:225pt;
+margin-right:245pt;
+font-family:sans-serif  ;
+font-style:regular;
+font-size:14pt;
+color:231F20;
+line-height: 1.8;
+}
+img#hello{
+width:100%;
+height:70%;
+}
+img#hellos{
+width:75%;
+height:78%;
+}
+table{
+border-collapse:collapse;
+border-style: solid;
+border-radius:150px;
+margin-left:195pt;
+margin-right:225pt;
+font-size:14pt;
+color: #6b00b3;
+font-family:sans-serif  ;
+font-style:regular;
+line-height: 1.8;
+width:65%;
+
+}
+th{
+width:50%;
+height:50%;
+}
+p#hai{
+font-size:12pt;
+color:black;
+}
+h1{
+color: #6b00b3;
+}
+div#hiii{
+background-image:url('a6.png');
+background-repeat:no-repeat;
+background-position:center;
+background-size: cover;
+height:84%;
+width:100%;
+color:white; 
+font-size:14pt;
+column-count: 3;
+column-width: 220px;
+column-gap: 3px;
+font-family:sans-serif  ;
+font-style:regular;
+line-height: 1.7;
+}
+h6{
+font-size:16pt;
+color:#e6b800;
+font-family:sans-serif  ;
+font-style:regular;
+}
+
+</style>
+</head>
+<body>
+  <div class="main">
+        
+        <div class="logo" onclick="window.location.href='index.html'">
+
+            <img src="GMS logo 2.png" >
+        </div>
+        <header><center>ABOUT US</header>
+<img id="hello" src="a1.png"></img>
+<br>
+<br>
+<h1 id="demo">About Us</h1>
+<br>
+<p id="hi">Way back in 1975, when ‘Amusement Parks’ and ‘Theme Parks’ were hitherto unheard of in India, the founders of GMS set about creating a unique entertainment idea that was very popular only in countries abroad. Our late founders visualised a new concept of leisure in India and brought his vision to fruition, thereby pioneering a whole new experience.
+</p>
+<br>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="a2.png" style="width:100%">
+  <div class="text"><i>HELLO GUYS</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="a3.png" style="width:100%">
+  <div class="text"><i>WELCOME TO OUR MAGIC WORLD</i></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="a4.png" style="width:100%">
+  <div class="text"><i>HAVE A GREAT FUN</i></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<br>
+<P id="hii">
+It was named ‘GMS Golden Beach’, and very quickly became the most popular name in Southern India. The transition from just a family outing place to a full-fledged Theme Park was massive undertaking. However, the promoters, with their wide exposure to Theme Parks around the world, worked to bring in the best of rides from USA, Italy, Japan and other countries. Re-christened in 1997 as ‘GMS Universal Kingdom’, 40 years on, the Kingdom remains India’s largest theme park and is a thriving hub of fun, sun and sparkling good times!
+<br><br>
+The park is spread out over a massive 45 acres of beautiful property, complete with a private beach. It homes to 45+ scream-out-loud rides, a huge Water Park complete with massive slides that drop into 5500 gallons of swirling water, and an array of exhibits including the Snow Kingdom, the Petting Zoo, and the Statue Man (side note, there’s a bounty to be won if you can get him to move). All of it set against a backdrop of lush greenery and the azure sea. Truly the kingdom of Fun!
+<br><br>
+Our mascot, Kutti Raja is the king of Fun and Quirk. His unimpeachable mandate, unadulterated fun for everyone! Along with his army of herculean ‘Chutti Sepoys’, they are harbingers of fun, cheering you on through the many exciting rides and attractions.
+<br><br>
+<b>A rich history, a colourful legacy and many more thrills to come! At GMS, we take the business of fun very seriously – in fact it’s our credo!</b></p>
+<br>
+<br>
+<h1 id="demo">Awards</h1>
+<p id="hi">
+Over the years, GMS Universal Kingdom has accumulated a bounty of awards and accolades from government and industry bodies for excellence and outstanding service. And while this recognition means the world to us, it also drives us to constantly better your experience with us.
+</p>
+<br>
+<center>
+<img id="hellos" src="a5.png"></img></center>
+<br>
+<br>
+<br>
+<center>
+<table border="1">
+<tr>
+<th>Year</th>
+<th>Awards</th>
+</tr>
+<tr>
+<th>2005</th>
+<th>National Award of Excellence - <p id="hai">Winner</p></th>
+</tr>
+<tr>
+<th>2009</th>
+<th>National Award of Excellence - <p id="hai">Winner- Events - Park Operators- Spectacular Aquatic Show</p></th>
+</tr>
+<tr>
+<th>2009-10</th>
+<th>IAAPI Amusement EXPO-<p id="hai">Winner Event of the Year</p></th>
+</tr>
+<tr>
+<th>2010</th>
+<th>National Award of Excellence-<p id="hai">Winner-Event of the Year</p></th>
+</tr>
+<tr>
+<th>2010</th>
+<th>National Award of Excellence-<p id="hai">Winner-Innovative Promotional Activity Through Media</p></th>
+</tr>
+<tr>
+<th>2011-12</th>
+<th>National Award of Excellence-<p id="hai">Park Operators-Event of the Year-Polynesian Show -Winner</p></th>
+</tr>
+<tr>
+<th>2011-12</th>
+<th>National Award of Excellence-<p id="hai">IAAP I Amusement EXPO-Total Number andVariety of Rides-Runner Up</p></th>
+</tr>
+<tr>
+<th>2011</th>
+<th>National Award of Excellence-<p id="hai">Innovative Promotional</p></th>
+</tr>
+<tr>
+<th>2012-13</th>
+<th>National Award of Excellence-<p id="hai">Park Operators-Electronic Media TV, Channel & Radio-Runner Up</p></th>
+</tr>
+<tr>
+<th>2012-13</th>
+<th>National Award of Excellence - <p id="hai">Events-Winner</p></th>
+</tr>
+<tr>
+<th>2015-16</th>
+<th>National Award of Excellence - <p id="hai">Innovative and Attractive Facility-GMS Snow Kingdom-Runner Up</p></th>
+</tr>
+<tr>
+<th>2015-16</th>
+<th>National Award of Excellence - <p id="hai">GMS Universal Kingdom-Event for the Year-Runner UP</p></th>
+</tr>
+<tr>
+<th>2015-16</th>
+<th>National Award of Excellence - <p id="hai">GMS Universal Kingdom-Electronic Media-Runner Up</p></th>
+</tr>
+</table>
+<br>
+<br>
+<div id="hiii">
+<p id="demos">
+<h6>&#8680;Location</h6>
+GMS Universal Kingdom, East<br> Coast Road,Chennai - 600 041
+<h6>&#8680;Park Info</h6>
+About Us<br>
+Park Map<br>
+FAQ<br>
+Park Overview<br>
+<h6>&#8680;Open Hours</h6>
+Weekdays: 11:00 am - 07:30 pm<br>
+Weekends and Holidays: 10:30<br> am to 08:00 pm
+<br>
+<h6>&#8680;Things To Do</h6>
+Rides<br>
+Attractions<br>
+Groups<br>
+Rates<br>
+<h6>&#8680;Get In Touch</h6>
++91 8837636919<br>
++91 8228297897<br>
+@gmsuniversalpark.in
+<br>
+<h6>&#8680;Group Booking</h6>
++910872772780<br>
+grp@gmsuniversalpark.in<br>
+(MINIMUM OF 25 PERSONS)
+<br><br>
+<button>
+<a href="privacy policy.html">PRIVACY POLICY<a></button></p>
+</div>
+</body>
+</html>
+

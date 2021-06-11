@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RIDES|gmss</title>
+<style>
+.slider {display:none;
+width:372pt; 
+height:167pt;
+  margin-left: auto;
+  margin-right: auto;
+   border: 3px solid #730099;}
+header{
+font-family:Brush Script MT;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;}
+ body{
+background-image:url('water.jpg');
+}
+</style>
+</head>
+<body>
+<header class="dem">Shows Gallery&#127914;</header>
+<br>
+<br>
+
+<div class="frds" style="max-width:700px">
+  <center><img class="slider" src="41.0.png" style="width:70%;height:50%;"></center>
+  <center><img class="slider" src="42.png" style="width:70%;height:50%;"></center>
+  <center><img class="slider" src="43.png" style="width:70%;height:50%;"></center>
+  <center><img class="slider" src="44.png" style="width:70%;height:50%;"></center>
+  <center><img class="slider" src="45.png" style="width:70%;height:50%;"></center>
+  <center><img class="slider" src="46.png" style="width:70%;height:50%;"></center>
+</div>
+
+<script>
+var myIndex = 0;
+my5();
+
+function my5() {
+  var i;
+  var x = document.getElementsByClassName("slider");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(my5, 2000); 
+}
+</script>
+</body>
+</html>
